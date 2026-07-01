@@ -17,7 +17,7 @@ st.write("Desarrollado para la materia de Economía Computacional.")
 @st.cache_data # Para que la web cargue rápido y no procese el Excel en cada click
 def cargar_y_procesar_datos():
     # Lee el archivo (debe estar en la misma carpeta del GitHub)
-    df = pd.read_excel("datos_inflacion.xlsx")
+    df = pd.read_excel("Datos económicos 2017-2026.xlsx")
     df['Fecha'] = pd.to_datetime(df['Fecha'])
     
     # Transformaciones de variables
